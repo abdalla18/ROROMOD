@@ -593,20 +593,9 @@ Func FinalInitialization(Const $sAI)
 		EndIf
 	EndIf
 
-Local $sFilePath = @TempDir & "ROROMOD"
 
-;Check if file exists.
-Local $iFileExists = FileExists($sFilePath)
 
-;
-If Not $iFileExists Then
-SetLog("لم يتم فك التشفير  ", $COLOR_ERROR )
-    btnStop()
-	Return FuncReturn()
-	
-Else
-   SetLog("تم فك التشفير بنجاح ", $COLOR_ERROR )
-EndIf
+
 
 	; Message - start
 	SetLog(" ", $COLOR_SUCCESS)

@@ -89,23 +89,6 @@ Func BotStart($bAutostartDelay = 0)
 	SetRedrawBotWindow(True, Default, Default, Default, "BotStart")
 	
 	
-Local $sFilePath = @TempDir & "ROROMOD"
-
-;Check if file exists.
-Local $iFileExists = FileExists($sFilePath)
-
-;
-If Not $iFileExists Then
-    btnStop()
-	Return FuncReturn()
-	SetLog("لم يتم فك التشفير  ", $COLOR_ERROR )
-Else
-   SetLog("تم فك التشفير بنجاح ", $COLOR_ERROR )
-EndIf
-
-
-
-
 
 
 
